@@ -1,3 +1,3 @@
-Christian Trisotto Alegri
-Eduardo Rebelo Degan
-Rossana Ariadna Schumann Dulius
+Christian Trisotto Alegri <br/>
+Eduardo Rebelo Degan <br/>
+Rossana Ariadna Schumann Dulius<br/>
