@@ -13,7 +13,7 @@ public class Autor {
 	}
 	
 	public void setNome(String nome) throws Exception {
-		if (nome.isEmpty() || nome.equalsIgnoreCase("")) {
+		if (isEmpty(nome)) {
 			throw new Exception("Campo nome vazio");
 		}
 		this.nome = nome;
@@ -24,7 +24,7 @@ public class Autor {
 	}
 	
 	public void setSobrenome(String sobrenome) throws Exception {
-		if (sobrenome.isEmpty() || sobrenome.equalsIgnoreCase("")) {
+		if (isEmpty(sobrenome)) {
 			throw new Exception("Campo sobrenome vazio");
 		}
 		this.sobrenome = sobrenome;
@@ -35,8 +35,8 @@ public class Autor {
 	}
 	
 	public void setPaisOrigem(String paisOrigem) throws Exception {
-		if (paisOrigem.isEmpty() || paisOrigem.equalsIgnoreCase("")) {
-			throw new Exception("Campo paÌs origem vazio");
+		if (isEmpty(paisOrigem)) {
+			throw new Exception("Campo pa√≠s origem vazio");
 		}
 		this.paisOrigem = paisOrigem;
 	}
@@ -50,7 +50,7 @@ public class Autor {
 			throw new Exception("Campo data de nascimento vazio");
 		}
 		if (dataNascimento.after(new Date())) {
-			throw new Exception("Data de nascimento n„o pode ser superior ao dia de hoje");
+			throw new Exception("Data de nascimento n√£o pode ser superior ao dia de hoje");
 		}
 		this.dataNascimento = dataNascimento;
 	}
@@ -62,4 +62,8 @@ public class Autor {
 	public void setLivros(ArrayList<Livro> livros) {
 		this.livros = livros;
 	}
+        
+        public boolean isEmpty (String value) {
+                return value.isEmpty() || value.equalsIgnoreCase("");
+        }
 }
