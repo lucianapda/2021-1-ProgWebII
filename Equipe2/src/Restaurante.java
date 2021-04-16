@@ -42,5 +42,20 @@ public class Restaurante {
 		if(numeroTelefone == null || numeroTelefone.length() == 8)
 		NumeroTelefone = numeroTelefone;
 	}
+	
+	public int QtdMesasDisponiveis() {
+		int qtd = 0;
+		for (Mesa m : mesas.values()) {
+			if(m.isDisponivel()) {
+				qtd++;
+			}
+		}
+		return qtd;
+	}
+	
+	public String toString() {
+		return "Nome do Restaurante: "+getNome()+"\nNúmero de Telefone: "+getNumeroTelefone()
+		+"\nQuantidade de mesas disponiveis: "+QtdMesasDisponiveis()+"\n";
+	}
 
 }

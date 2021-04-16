@@ -8,9 +8,7 @@ public class Reserva {
 	private String NumeroContato;
 	private LocalDate DataReserva;
 	private int duracao;
-	
-	
-	
+		
 	public Reserva(String nome, int qtdPessoas, String numeroContato, LocalDate dataReserva, int duracao) {
 		super();
 		setNome(nome);

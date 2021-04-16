@@ -19,7 +19,7 @@ public class Mesa {
 
 	public void setReserva(Reserva reserva) {
 		this.reserva = reserva;
-		setDisponivel(false);
+		disponivel = false;
 	}
 
 	public int getNumero() {
@@ -49,9 +49,6 @@ public class Mesa {
 	}
 
 	public void setDisponivel(boolean disponivel) {
-		if(!disponivel) {
-			throw new IllegalArgumentException("Mesa já reservada ou ocupada");
-		}
 		this.disponivel = disponivel;
 	}
 	
