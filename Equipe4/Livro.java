@@ -15,10 +15,10 @@ public class Livro {
 	
 	public void setDataPublicacao(Date dataPublicacao) throws Exception {
 		if (dataPublicacao == null) {
-			throw new Exception("Campo data de publicaÁ„o vazio");
+			throw new Exception("Campo data de publica√ß√£o vazio");
 		}
 		if (dataPublicacao.after(new Date())) {
-			throw new Exception("Data de publicaÁ„o n„o pode ser superior ao dia de hoje");
+			throw new Exception("Data de publica√ß√£o n√£o pode ser superior ao dia de hoje");
 		}
 		this.dataPublicacao = dataPublicacao;
 	}
@@ -28,8 +28,8 @@ public class Livro {
 	}
 	
 	public void setTitulo(String titulo) throws Exception {
-		if (titulo == null || titulo.equals("") || titulo.isEmpty()) {
-			throw new Exception("Campo tÌtulo vazio");
+		if (isEmpty(titulo)) {
+			throw new Exception("Campo t√≠tulo vazio");
 		}
 		this.titulo = titulo;
 	}
@@ -40,7 +40,7 @@ public class Livro {
 	
 	public void setAutor(Autor autor) throws Exception {
 		if (autor.equals(null)) {
-			throw new Exception("Autor da obra n„o encontrado/cadastrado");
+			throw new Exception("Autor da obra n√£o encontrado/cadastrado");
 		}
 		this.autor = autor;
 	}
@@ -50,7 +50,7 @@ public class Livro {
 	}
 	
 	public void setEditora(String editora) throws Exception {
-		if (editora == null || editora.equals("") || editora.isEmpty()) {
+		if (isEmpty(editora)) {
 			throw new Exception("Campo editora vazio");
 		}
 		this.editora = editora;
@@ -62,7 +62,7 @@ public class Livro {
 	
 	public void setPaginas(int paginas) throws Exception {
 		if (paginas <= 0) {
-			throw new Exception("Campo p·ginas inv·lido");
+			throw new Exception("Campo p√°ginas inv√°lido");
 		}
 		this.paginas = paginas;
 	}
@@ -80,9 +80,13 @@ public class Livro {
 	}
 
 	public void setGeneroLiterario(String generoLiterario) throws Exception {
-		if (generoLiterario == null || generoLiterario.equals("") || generoLiterario.isEmpty()) {
-			throw new Exception("Campo gÍnero liter·rio vazio");
+		if (isEmpty(generoLiterario)) {
+			throw new Exception("Campo g√™nero liter√°rio vazio");
 		}
 		this.generoLiterario = generoLiterario;
 	}
+        
+        public boolean isEmpty (String value) {
+            	return value == null || value.equals("") || value.isEmpty();
+        }
 }
