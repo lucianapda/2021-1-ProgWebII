@@ -8,62 +8,37 @@ import model.Pizza;
 @WebService
 public class PizzaController {
 
-	private Pizza pizza;
-
-	public PizzaController(Pizza Pizza) {
-		this.setPizza(Pizza);
-	}
-
 	public PizzaController() {
 	}
 
 	@WebMethod
-	public void adicionarSabor(String sabor) {
-		this.getPizza().adicionarSabor(sabor);
+	public void adicionarSabor(Pizza pizza, String sabor) {
+		pizza.adicionarSabor(sabor);
 	}
 
 	@WebMethod
-	public void removerSabor(String sabor) {
-		this.getPizza().removerSabor(sabor);
+	public void removerSabor(Pizza pizza,String sabor) {
+		pizza.removerSabor(sabor);
 	}
 
 	@WebMethod
-	public String[] getSabores() {
-		return this.getPizza().getSabores();
+	public String[] getSabores(Pizza pizza) {
+		return pizza.getSabores();
 	}
 
 	@WebMethod
-	public int getPreco() {
-		return this.getPizza().getPreco();
+	public int getPreco(Pizza pizza) {
+		return pizza.getPreco();
 	}
 
 	@WebMethod
-	public char getTamanho() {
-		return this.getPizza().getTamanho();
+	public char getTamanho(Pizza pizza) {
+		return pizza.getTamanho();
 	}
 
 	@WebMethod
-	public void setTamanho(char tamanho) {
-		this.getPizza().setTamanho(tamanho);
+	public int getCodigo(Pizza pizza) {
+		return pizza.getCodigo();
 	}
 
-	@WebMethod
-	public int getCodigo() {
-		return this.getPizza().getCodigo();
-	}
-
-	@WebMethod
-	public void setCodigo(int codigo) {
-		this.getPizza().setCodigo(codigo);
-	}
-
-	@WebMethod
-	public Pizza getPizza() {
-		return pizza;
-	}
-
-	@WebMethod
-	public void setPizza(Pizza pizza) {
-		this.pizza = pizza;
-	}
 }

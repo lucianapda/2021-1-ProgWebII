@@ -1,9 +1,7 @@
 package model;
 
 import javax.jws.WebMethod;
-import javax.jws.WebService;
 
-@WebService
 public class Pizza {
 
 	private String[] sabores;
@@ -15,11 +13,10 @@ public class Pizza {
 	public Pizza(char tamanho) {
 		this.setTamanho(tamanho);
 	}
-	
+
 	public Pizza() {
 	}
 
-	@WebMethod
 	public void adicionarSabor(String sabor) {
 
 		if (sabor == null) {
@@ -35,11 +32,11 @@ public class Pizza {
 		}
 
 		this.getSabores()[indice] = sabor;
+
+		System.out.println("sabor '" + this.getSabores()[indice] + "' adicionado à pizza.");
 		indice++;
-		System.out.println("sabor '" + sabor + "' adicionado à pizza.");
 	}
 
-	@WebMethod
 	public void removerSabor(String sabor) {
 		if (sabor == null) {
 			throw new NullPointerException("sabor nulo");
@@ -54,6 +51,10 @@ public class Pizza {
 		}
 		System.out.println("sabor '" + sabor + "' removido d pizza.");
 	}
+	
+	public void setSabores(String[] sabores) {
+		this.sabores = sabores;
+	}
 
 	private int contemSabor(String sabor) {
 		for (int i = 0; i < this.getSabores().length; i++) {
@@ -66,12 +67,10 @@ public class Pizza {
 		return -1;
 	}
 
-	@WebMethod
 	public String[] getSabores() {
 		return sabores;
 	}
 
-	@WebMethod
 	public int getPreco() {
 		return preco;
 	}
@@ -84,7 +83,6 @@ public class Pizza {
 		this.preco = preco;
 	}
 
-	@WebMethod
 	public char getTamanho() {
 		return tamanho;
 	}
@@ -110,7 +108,6 @@ public class Pizza {
 		}
 	}
 
-	@WebMethod
 	public int getCodigo() {
 		return codigo;
 	}
