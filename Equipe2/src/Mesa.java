@@ -52,6 +52,9 @@ public class Mesa {
 		this.disponivel = disponivel;
 	}
 	
-	
+	public String toString() {
+		return "Número da mesa:"+getNumero()+"\nQuantidade de cadeiras: "+getQtdCadeiras()
+		+"\nEstá disponivel: "+isDisponivel()+"\n";
+	}
 	
 }

@@ -9,11 +9,13 @@ public class ControleRestaurante {
 	}
 	
 	public void Alterar(Restaurante res, String nome, String numeroTele) {
-		if(nome != null) {
-			res.setNome(nome);
-		}else if(numeroTele != null) {
-			res.setNumeroTelefone(numeroTele);
+		for (Restaurante restaurante : restaurantes) {
+			if(restaurante.getNome() == nome) {
+				restaurante.setNome(nome);
+				restaurante.setNumeroTelefone(numeroTele);
+			}
 		}
+		
 	}
 	
 	public String Listar(){
