@@ -5,7 +5,7 @@ public class Restaurante {
 	private String Nome;
 	private String NumeroTelefone;
 	
-	private HashMap<Integer, Mesa> mesas = new HashMap<>();	
+	public HashMap<Integer, Mesa> mesas = new HashMap<>();	
 	
 	public Restaurante(String nome, String numeroTelefone) {
 		super();

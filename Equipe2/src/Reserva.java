@@ -89,4 +89,9 @@ public class Reserva {
 		}
 		this.mesa = mesa;
 	}
+	
+	public String toString() {
+		return "Nome reserva: "+Nome+"\nQuantidade de pessoas: "+QtdPessoas
+				+"\nData da reserva: "+DataReserva+"\nMesa Reservada: "+mesa.getNumero()+"\n";
+	}
 }

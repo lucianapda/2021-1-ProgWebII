@@ -1,8 +1,11 @@
 import java.util.HashMap; 
+import java.util.Date;
+import javax.jws.WebService;
 
-public class ControleMesa { 
+@WebService(endpointInterface = "ControleMesaserver")
+public class ControleMesa implements ControleMesaServer{ 
 
-    private HashMap<Integer, Mesa> Mesas = new HashMap<>();
+    public HashMap<Integer, Mesa> Mesas = new HashMap<>();
     
     public void Adicionar(Mesa mesa) {
         Mesas.put(mesa.getNumero(), mesa);
@@ -26,7 +29,14 @@ public class ControleMesa {
         return str;
     }
     
-    public void Remover(Mesa mesa) {
-        Mesas.remove(mesa.getNumero());
+    public void Remover(Mesa mesa, Restaurante restaurante) {
+    	ControleReserva cReserva = new ControleReserva();
+    	for(Reserva res : cReserva.reservas.values()) {
+    		if(res.equals(mesa.getReserva())) {
+    			res.setMesa(null);
+    		}
+    	}
+    	restaurante.mesas.remove(mesa.getNumero(), mesa);
+        Mesas.remove(mesa.getNumero(), mesa);
     }
 }   
