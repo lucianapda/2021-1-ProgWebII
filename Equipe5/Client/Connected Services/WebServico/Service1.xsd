@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WebService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WebService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Filme">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dataLancamento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="duracao" type="xs:double" />
+      <xs:element minOccurs="0" name="nome" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Filme" nillable="true" type="tns:Filme" />
+  <xs:complexType name="ArrayOfFilme">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Filme" nillable="true" type="tns:Filme" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFilme" nillable="true" type="tns:ArrayOfFilme" />
+  <xs:complexType name="Plataforma">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="filmes" nillable="true" type="tns:ArrayOfFilme" />
+      <xs:element minOccurs="0" name="nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="valor" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Plataforma" nillable="true" type="tns:Plataforma" />
+  <xs:complexType name="ArrayOfPlataforma">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Plataforma" nillable="true" type="tns:Plataforma" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPlataforma" nillable="true" type="tns:ArrayOfPlataforma" />
+</xs:schema>

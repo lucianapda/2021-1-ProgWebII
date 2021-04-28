@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:55231/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:55231/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:55231/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WebService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetFilme_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilme" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFilme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFilmeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListFilmes_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListFilmes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListFilmes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListFilmesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddFilme_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFilme" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddFilme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFilmeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DelFilme_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelFilme" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DelFilme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelFilmeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UptFilme_InputMessage">
+    <wsdl:part name="parameters" element="tns:UptFilme" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UptFilme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UptFilmeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPlataforma_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlataforma" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetPlataforma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPlataformaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListPlataforma_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListPlataforma" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListPlataforma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListPlataformaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddPlataforma_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlataforma" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddPlataforma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlataformaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DelPlataforma_InputMessage">
+    <wsdl:part name="parameters" element="tns:DelPlataforma" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DelPlataforma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DelPlataformaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UptPlataforma_InputMessage">
+    <wsdl:part name="parameters" element="tns:UptPlataforma" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UptPlataforma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UptPlataformaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetFilme">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetFilme" message="tns:IService1_GetFilme_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetFilmeResponse" message="tns:IService1_GetFilme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListFilmes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListFilmes" message="tns:IService1_ListFilmes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListFilmesResponse" message="tns:IService1_ListFilmes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFilme">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddFilme" message="tns:IService1_AddFilme_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddFilmeResponse" message="tns:IService1_AddFilme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelFilme">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DelFilme" message="tns:IService1_DelFilme_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DelFilmeResponse" message="tns:IService1_DelFilme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UptFilme">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UptFilme" message="tns:IService1_UptFilme_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UptFilmeResponse" message="tns:IService1_UptFilme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlataforma">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetPlataforma" message="tns:IService1_GetPlataforma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetPlataformaResponse" message="tns:IService1_GetPlataforma_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListPlataforma">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListPlataforma" message="tns:IService1_ListPlataforma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListPlataformaResponse" message="tns:IService1_ListPlataforma_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPlataforma">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddPlataforma" message="tns:IService1_AddPlataforma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddPlataformaResponse" message="tns:IService1_AddPlataforma_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DelPlataforma">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DelPlataforma" message="tns:IService1_DelPlataforma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DelPlataformaResponse" message="tns:IService1_DelPlataforma_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UptPlataforma">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UptPlataforma" message="tns:IService1_UptPlataforma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UptPlataformaResponse" message="tns:IService1_UptPlataforma_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetFilme">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetFilme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListFilmes">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListFilmes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFilme">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddFilme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelFilme">
+      <soap:operation soapAction="http://tempuri.org/IService1/DelFilme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UptFilme">
+      <soap:operation soapAction="http://tempuri.org/IService1/UptFilme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlataforma">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetPlataforma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPlataforma">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListPlataforma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPlataforma">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddPlataforma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelPlataforma">
+      <soap:operation soapAction="http://tempuri.org/IService1/DelPlataforma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UptPlataforma">
+      <soap:operation soapAction="http://tempuri.org/IService1/UptPlataforma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:55231/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
