@@ -1,0 +1,79 @@
+INSERT INTO public.propietario(
+	tipoinscricao, cpf, cnpj, nome, email, situacao, datainicio)
+	VALUES ('J', null, '09635976000105', 'Fest Malhas Ltda', 'festmalhas@hotmail.com', 'A', current_date);
+    
+INSERT INTO public.propietario(
+	tipoinscricao, cpf, cnpj, nome, email, situacao, datainicio)
+	VALUES ('J', null, '42167005000153', 'Sempre Bom Ltda', 'semprebom@yahoo.com', 'A', current_date);
+    
+INSERT INTO public.propietario(
+	tipoinscricao, cpf, cnpj, nome, email, situacao, datainicio)
+	VALUES ('F', '03559529042', null, 'Marlei T. Stasiak', 'marleistasiak@hotmail.com', 'A', current_date);
+    
+INSERT INTO public.loja(
+	idloja, idpropietario, nome, situacao)
+	VALUES (1, 1, 'Sede Blumenau', 'A');
+    
+INSERT INTO public.loja(
+	idloja, idpropietario, nome, situacao)
+	VALUES (1, 2, 'Sede Gaspar', 'A');
+    
+INSERT INTO public.loja(
+	idloja, idpropietario, nome, situacao)
+	VALUES (1, 3, 'Marlei Modas', 'A');
+    
+INSERT INTO public.categoria(
+	idcategoria, idloja, idpropietario, nome, descricao, situacao)
+	VALUES (1, 1, 3, 'Infantil', 'Roupas Infanto Juvenil 0 - 11 anos', 'A');
+    
+INSERT INTO public.categoria(
+	idcategoria, idloja, idpropietario, nome, descricao, situacao)
+	VALUES (2, 1, 3, 'Feminino', 'Roupas para mulheres', 'A');
+    
+INSERT INTO public.categoria(
+	idcategoria, idloja, idpropietario, nome, descricao, situacao)
+	VALUES (3, 1, 3, 'Masculio', 'Roupas para homens', 'I');
+    
+INSERT INTO public.promocao(
+	idloja, idpropietario, idpromocao, nome, percentual_desconto, datacadastro, situacao)
+	VALUES (1, 3, 1, 'Promoção de Inverno', 0.1, current_date, 'A');
+    
+INSERT INTO public.promocao(
+	idloja, idpropietario, idpromocao, nome, percentual_desconto, datacadastro, situacao)
+	VALUES (1, 3, 2, 'Promoção de Verão', 0.05, current_date, 'I');
+    
+INSERT INTO public.produto(
+	idproduto, idloja, idpropietario, idcategoria, nome, descricao, precounitario, datacadastro, situacao)
+	VALUES (1, 1, 3, 2, 'Vestido Decotado', 'Vestido preto decotado de linho fino importado', 120, current_date, 'A');
+    
+INSERT INTO public.produto(
+	idproduto, idloja, idpropietario, idcategoria, nome, descricao, precounitario, datacadastro, situacao)
+	VALUES (2, 1, 3, 2, 'Camiseta Azul', 'Camiseta estilo esporte para inverno', 55, current_date, 'A');
+    
+INSERT INTO public.produto(
+	idproduto, idloja, idpropietario, idcategoria, nome, descricao, precounitario, datacadastro, situacao)
+	VALUES (3, 1, 3, 2, 'Camiseta Branca', 'Camiseta estilo esporte meia estação', 45, current_date, 'A');
+    
+INSERT INTO public.produto(
+	idproduto, idloja, idpropietario, idcategoria, nome, descricao, precounitario, datacadastro, situacao)
+	VALUES (4, 1, 3, 2, 'Vestido', 'Vesntido mini saia preta de seda europeia', 350, current_date, 'A');
+    
+INSERT INTO public.produto_imagem(
+	idproduto, idloja, idpropietario, idimagem, nome, caminhodiretorio, situacao)
+	VALUES (1, 1, 3, 1, 'product4', '/imagens/product4.jpeg', 'A');
+    
+INSERT INTO public.produto_imagem(
+	idproduto, idloja, idpropietario, idimagem, nome, caminhodiretorio, situacao)
+	VALUES (2, 1, 3, 1, 'product5', '/imagens/product5.jpeg', 'A');
+    
+INSERT INTO public.produto_imagem(
+	idproduto, idloja, idpropietario, idimagem, nome, caminhodiretorio, situacao)
+	VALUES (3, 1, 3, 1, 'product6', '/imagens/product6.jpeg', 'A');
+    
+INSERT INTO public.produto_imagem(
+	idproduto, idloja, idpropietario, idimagem, nome, caminhodiretorio, situacao)
+	VALUES (4, 1, 3, 1, 'product3', '/imagens/product3.jpeg', 'A');
+	
+INSERT INTO public.pessoa(
+	idpessoa, tipoinscricao, cpf, cnpj, nome)
+	VALUES (1, 'F', '73290719006', null, 'Carlos Alberto Silva');

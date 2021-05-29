@@ -1,0 +1,12 @@
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\bin\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.deps.json
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\bin\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.runtimeconfig.json
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\bin\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.runtimeconfig.dev.json
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\bin\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.dll
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\bin\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.pdb
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\obj\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\obj\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\obj\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.AssemblyInfo.cs
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\obj\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\obj\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.dll
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\obj\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.pdb
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Authentication\obj\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Authentication.genruntimeconfig.cache

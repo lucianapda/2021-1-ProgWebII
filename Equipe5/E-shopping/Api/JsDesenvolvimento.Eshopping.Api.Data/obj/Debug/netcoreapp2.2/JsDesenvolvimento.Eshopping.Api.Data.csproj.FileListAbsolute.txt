@@ -1,0 +1,4 @@
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Data\obj\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Data.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Data\obj\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Data.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Data\obj\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Data.AssemblyInfo.cs
+C:\Users\PC\Desktop\E-shopping-master\E-shopping\Api\JsDesenvolvimento.Eshopping.Api.Data\obj\Debug\netcoreapp2.2\JsDesenvolvimento.Eshopping.Api.Data.csproj.CoreCompileInputs.cache
